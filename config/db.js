@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 mongoose.set('useCreateIndex', true);
+mongoose.set('useFindAndModify', false);
 
 //Students DB
 mongoose.connect(
